@@ -29,9 +29,10 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(43, 116, 136);
+    background-color: rgb(34, 86, 108);
     color: white;
     text-align: center;
+    font-size: small;
   }
 
   .fondo-gris-oscuro{
@@ -48,10 +49,9 @@
     text-decoration-style: dotted;
   }
 
-  .texto-pequeño{
-    font-size: x-small;
+  label{
+    font-size: smaller;
   }
-
 /*
   #opacidad-fondo{
     background: rgba(52, 51, 51, 0.116);
