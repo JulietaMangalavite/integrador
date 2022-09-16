@@ -46,7 +46,7 @@
               </li>
               <li class="nav-item">
                 <!-- no funciona color verde texto -->
-                <a class="nav-link texto-verde-claro">Comprar tickets</a>
+                <a class="nav-link texto-verde-claro" href="#">Comprar tickets</a>
               </li>
             </ul>
           </div>
@@ -57,30 +57,30 @@
 
   <body>
 
-    <!-- imagen de fondo y el texto encima a la derecha, ver responsive, funcionamiento de los botones -->
-      <div class="conteiner">
-        <a name="LaConferencia"></a>
-        <div class="text-light relativo">
-          <img src="img/ba1.jpg" class="img-top" alt="Buenos Aires">
-          <div class="centrar"> 
-            <h1>Conf Bs As</h1>
-              <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están en el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
-              </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button class="btn btn-outline-light me-md-2" type="button">Quiero ser orador</button>
-              <button class="btn fondo-verde-claro text-light" type="button">Comprar tickets</button>
-            </div>
-          </div>
-        </div> 
-      </div>
+    <!--falta opacidad oscuro- texto encima a la derecha, ver responsive se sale de la imagen- poner texto derecha -->
+    <a name="LaConferencia"></a>
+  
+    <div class="relativo">
+      <img src="img/ba1.jpg" class="img-top" alt="Buenos Aires">
+    </div>
 
-      <!--cards oradores - centrar -->
-      <div class="conteiner p-5 my-5">
+    <div class="centrar text-light"> 
+      <h1>Conf Bs As</h1>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están en el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-outline-light me-md-2" type="button">Quiero ser orador</button>
+        <button class="btn fondo-verde-claro text-light" type="button">Comprar tickets</button>
+      </div>
+    </div>    
+   
+  
+      <!--cards oradores -->
+      <div class="conteiner my-5">
         <a name="LosOradores"></a>
         <h2 class="text-center fs-6">CONOCE A LOS</h2>
         <h2 class="text-center">ORADORES</h2>
         
-        <div class="container row row-cols-1 row-cols-md-3 g-4">
+        <div class="container row row-cols-1 row-cols-md-3 g-4 mx-auto">
           <div class="col">
             <div class="card h-100">
               <img src="img/steve.jpg" class="card-img-top" alt="Steve Jobs">
@@ -118,16 +118,15 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
 
-      <!-- ver que el fondo sobresale de la imagen - falta borde blanco - problema en md-sm -->
+      <!-- ver responsive -->
           <div class="container-fluid">
             <a name="LugarFecha"></a>
             <div class="row">
-              <div class="col-md-6 col-lg-6 col-xl-6 fondo-gris-oscuro"><img src="img/honolulu.jpg" class="mx-auto d-block" alt="Playa Honolulu" width="100%"></div>
+              <div class="col-md-6 col-lg-6 col-xl-6 p-0"><img src="img/honolulu.jpg" class="d-block" alt="Playa Honolulu" width="100%"></div>
               <div class="col-md-6 col-lg-6 col-xl-6 fondo-gris-oscuro text-light p-3"><h5>Bs As - Octubre</h5><p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las prncipales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la irla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidadda que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p> 
                 <button class="btn btn-outline-light me-md-2" type="button">Conocé más</button>
               </div>
@@ -136,46 +135,47 @@
 
       <div class="container p-5 my-5">
         <a name="ConvierteteOrador"></a>
-        <!-- acomodar diseño formulario responsive -->
         <h2 class="text-center fs-6">CONVIÉRTETE EN UN</h2>
         <h2 class="text-center">ORADOR</h2>
         <p class="text-center">Anótate como orador para dar una <span class="texto-punteado">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
-        
-        <div class="row g-3"> 
-          <div class="col">
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        <form> 
+          <div class="row g-3"> 
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
           </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+
+          <div class="my-3">
+            <textarea class="form-control" id="tituloCharla" rows="3" placeholder="¿Sobre qué quieres hablar?"></textarea>
+            <label for="tituloCharla" class="form-label">Recuerda incluir un título para tu charla.</label>
           </div>
-        </div>
-
-        <div class="my-3">
-          <textarea class="form-control" id="tituloCharla" rows="3"></textarea>
-          <label for="tituloCharla" class="form-label ">Recuerda incluir un título para tu charla.</label>
-        </div>
-    
-        <div class="d-grid gap-2 mb-3">
-          <button class="btn fondo-verde-claro text-light" type="button">Enviar</button>
-        </div>
-
+      <!-- <input type="submit"> -->
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn fondo-verde-claro text-light" type="button">Enviar</button>
+          </div>
+        </form>
       </div>
       
 
       
   </body>
   <!-- falta footer responsive -->
-  <div class="conteiner footer">
-    <ul class="row px-5 m-3">
-      <p class="col" href="#">Preguntas Frecuentes</p>
-      <p class="col" href="#">Contáctanos</p>
-      <p class="col" href="#">Prensa</p>
-      <p class="col" href="#">Conferencias</p>
-      <p class="col" href="#">Términos y Condiciones</p>
-      <p class="col" href="#">Privacidad</p>
-      <p class="col" href="#">Estudiantes</p>
-    </ul>
+  <footer>
+    <div class="conteiner footer">
+      <ul class="row justify-content-center texto-pequeño">
+        <p class="col" href="#">Preguntas Frecuentes</p>
+        <p class="col" href="#">Contáctanos</p>
+        <p class="col" href="#">Prensa</p>
+        <p class="col" href="#">Conferencias</p>
+        <p class="col" href="#">Términos y Condiciones</p>
+        <p class="col" href="#">Privacidad</p>
+        <p class="col" href="#">Estudiantes</p>
+      </ul>
 
-  </div>
-        
+    </div>
+  </footer>   
+
 </html>
