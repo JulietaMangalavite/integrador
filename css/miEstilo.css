@@ -1,3 +1,8 @@
+/*html, body { 
+ height: 100%;
+ overflow-x: hidden;
+}
+*/
 .fondo-verde-boton{
   background-color: rgb(41,167,68);
 }
@@ -5,6 +10,7 @@
 .fondo-verde-form {
     background: rgb(131, 181, 90);
 }
+
 .texto-verde-claro {
     color: rgb(59,149,82);
 }
@@ -15,8 +21,8 @@
 
 .centrar {
     position:absolute;
-    top:25%;
-    right:25%;
+    top:55%;
+    right:10%;
     text-align:right;
     font-size: smaller;
 }
@@ -24,7 +30,6 @@
 .img-bsas { 
     width: 100%;
     height: auto;
-    opacity: 0.7;
 }
 
 #opacidad-fondo{
@@ -41,6 +46,7 @@
 
 .texto-bsas {
   font-size: smaller;
+  padding-right: 10px;
 }
 
 @media (max-width:950px) {
