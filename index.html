@@ -61,15 +61,15 @@
     <a name="LaConferencia"></a>
   
     <div class="relativo">
-      <img src="img/ba1.jpg" class="img-top" alt="Buenos Aires">
+      <img src="img/ba1.jpg" class="img-bsas" id="opacidad-fondo" alt="Buenos Aires">
     </div>
 
-    <div class="centrar text-light"> 
+    <div class="centrar text-light justify-content-end"> 
       <h1>Conf Bs As</h1>
         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están en el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <div class="d-grid gap-2 d-md-flex justify-content-end">
         <button class="btn btn-outline-light me-md-2" type="button">Quiero ser orador</button>
-        <button class="btn fondo-verde-claro text-light" type="button">Comprar tickets</button>
+        <button class="btn fondo-verde-boton text-light" type="button">Comprar tickets</button>
       </div>
     </div>    
    
@@ -122,16 +122,18 @@
       </div>
 
 
-      <!-- form // ver responsive -->
-          <div class="container-fluid">
+      <!-- ver responsive -->
+      <div class="container-fluid">
             <a name="LugarFecha"></a>
             <div class="row">
-              <div class="col-md-6 col-lg-6 col-xl-6 p-0"><img src="img/honolulu.jpg" class="d-block" alt="Playa Honolulu" width="100%"></div>
-              <div class="col-md-6 col-lg-6 col-xl-6 fondo-gris-oscuro text-light p-3"><h5>Bs As - Octubre</h5><p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las prncipales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la irla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidadda que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p> 
-                <button class="btn btn-outline-light me-md-2" type="button">Conocé más</button>
+              <div class="col-md-6 col-lg-6 col-xl-6 p-0 border-white border-end"><img src="img/honolulu.jpg" class="d-block" alt="Playa Honolulu" width="100%"></div>
+              <div class="col-md-6 col-lg-6 col-xl-6 fondo-gris-oscuro text-light p-3"><h5>Bs As - Octubre</h5><p class="texto-bsas">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las prncipales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la irla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidadda que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p> 
+                <button class="btn btn-outline-light me-md-2 texto-bsas" type="button">Conocé más</button>
               </div>
             </div>
           </div>
+      
+ 
 
       <a name="ConvierteteOrador"></a>
       <div class="container p-5 my-5">
@@ -156,7 +158,7 @@
           </div>
             <!-- <input type="submit"> -->
           <div class="d-grid gap-2 mb-3">
-            <button class="btn fondo-verde-claro text-light" type="button">Enviar</button>
+            <button class="btn fondo-verde-form text-light" type="button">Enviar</button>
           </div>
         </form>
       </div>
@@ -164,21 +166,19 @@
 
       
   </body>
-  <!-- falta footer responsive -->
+  <!-- footer responsive -->
   <footer>
-    <div class="conteiner footer">
-      <ul class="row row-cols-3 justify-content-center mt-3">
-    
-        <p class="" href="#">Preguntas Frecuentes</p>
-        <p class="" href="#">Contáctanos</p>
-        <p class="" href="#">Prensa</p>
-        <p class="" href="#">Conferencias</p>
-        <p class="" href="#">Términos y Condiciones</p>
-        <p class="" href="#">Privacidad</p>
-        <p class="" href="#">Estudiantes</p>
-      </ul>
-
+    <div class="container-fluid mi-footer">
+      <div class="footer-menu p-3">
+          <a href="">Preguntas Frecuentes</a>
+          <a href="">Contáctanos</a>
+          <a href="">Prensa</a>
+          <a href="">Conferencias</a>
+          <a href="">Términos y Condiciones</a>
+          <a href="">Privacidad</a>
+          <a href="">Estudiantes</a>
+      </div>
     </div>
-  </footer>   
-
+  </footer>
+ 
 </html>
