@@ -1,24 +1,24 @@
-/*html, body { 
- height: 100%;
- overflow-x: hidden;
-}
-*/
 .fondo-verde-boton{
   background-color: rgb(41,167,68);
 }
 
 .fondo-verde-form {
-    background: rgb(131, 181, 90);
-}
-
-.texto-verde-claro {
-    color: rgb(59,149,82);
+  background: rgb(131, 181, 90);
 }
 
 .relativo {
     position:relative;
 }
 
+.display-flex{
+  /*width: 100vw;
+  height: 100vh;*/
+  display: flex;
+  flex: start;
+}
+#opacidad-fondo{
+  filter:brightness(50%);
+}
 .centrar {
     position:absolute;
     top:55%;
@@ -27,14 +27,46 @@
     font-size: smaller;
 }
 
-.img-bsas { 
-    width: 100%;
-    height: auto;
+@media (max-width:850px) {
+  .centrar {
+    position:absolute;
+    font-size: x-small;
+  }
+
+  .titulo-tam {
+    font-size: x-large;
+  }
+
+  .btn-tam {
+    font-size: x-small;
+  }
 }
 
-#opacidad-fondo{
-  filter:brightness(50%);
+@media (max-width:540px) {
+  .centrar {
+    top:35%;
+    right:10%;
+    position:absolute;
+    font-size: x-small;
+  }
 }
+  @media (max-width:425px) {
+    .centrar {
+      top:15%;
+      right:10%;
+      position:absolute;
+      font-size: xx-small;
+    }
+
+    .titulo-tam {
+      font-size: small;
+    }
+  
+    .btn-tam {
+      font-size: xx-small;
+    }
+   }
+
 
 .fondo-gris-oscuro{
   background-color: rgb(53,58,64);
@@ -49,15 +81,22 @@
   padding-right: 10px;
 }
 
-@media (max-width:950px) {
+
+@media (max-width:802px) {
   .texto-bsas {
-    font-size: xx-small;
+    font-size: x-small;
   }
 }
-@media (max-width:768px) {
-  .texto-bsas {
-    font-size: smaller;
+
+@media (max-width:655px) {
+  .texto-bsas, .btn-bsas {
+    font-size: xx-small;
+    margin-bottom: 5px;
   }
+  .titulo-bsas{
+    font-size: large;
+  }
+ 
 }
 
 .texto-punteado{
@@ -70,7 +109,7 @@ label{
 }
 
   .mi-footer {
-    position: fixed;
+    position:fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -79,32 +118,25 @@ label{
     color: white;
     text-align: center;
     font-size: x-small;
+    font-family: sans-serif;
+   
   }
 
-@media (max-width:500px) {
-  .footer-menu {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 20px;
+.footer-menu{
+  padding-right: 10px;
+  display: block;
   }
-}
-
-
-.footer-menu{
-  display: flex;
-}
-
-.footer-menu{
-padding-right: 10px;
-display: block;
-}
 
 .footer-menu a{
-  color: #cfd2d6;
+  color: #eef1f4;
   text-decoration: none;
   padding: 5px;
 }
 
 .footer-menu a:hover{
   color: #27bcda;
+}
+
+form{
+  padding-inline: 10%;
 }

@@ -45,8 +45,7 @@
                 <a class="nav-link texto-gris-claro" href="#ConvierteteOrador">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <!-- no funciona color verde texto -->
-                <a class="nav-link texto-verde-claro" href="#">Comprar tickets</a>
+                <a class="nav-link text-success" href="#">Comprar tickets</a>
               </li>
             </ul>
           </div>
@@ -58,25 +57,26 @@
   <body>
     <!-- div conf Bs As -->
     <!-- algo genera scroll horizontal -->
-    <!-- ver responsive el texto se sale de la imagen -->
+    <!-- ver responsive el texto se sale de la imagen en sm -->
 
     <a name="LaConferencia"></a>
     
-    <div class="row conteiner-fluid">
-      <div class="col relativo p-0">
-        <img src="img/ba1.jpg" class="img-bsas" id="opacidad-fondo" alt="Buenos Aires">
+    <div class="row conteiner-fluid relativo">
+      <div class="col relativo p-0 display-flex">
+        <img src="img/ba1.jpg" class="img-fluid mx-auto d-block" id="opacidad-fondo" alt="Buenos Aires">
       </div>
 
-      <div class="col-5 centrar text-light p-0"> 
-        <h1>Conf Bs As</h1>
-          <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están en el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-end">
-          <button class="btn btn-outline-light" type="button">Quiero ser orador</button>
-          <button class="btn fondo-verde-boton text-light" type="button">Comprar tickets</button>
-        </div>
-      </div>    
+        <div class="col-xl-5 col-lg-7 col-md-8 col-sm-9 col-10 centrar text-light"> 
+          <h1 class="titulo-tam">Conf Bs As</h1>
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están en el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+          <div class="d-grid gap-2 d-flex justify-content-end">
+            <button class="btn btn-outline-light btn-sm btn-tam" type="button">Quiero ser orador</button>
+            <button class="btn fondo-verde-boton text-light btn-sm btn-tam" type="button">Comprar tickets</button>
+          </div>
+        </div>   
     </div>
-   
+
+  
       <!--cards oradores -->
       <div class="conteiner my-5">
         <a name="LosOradores"></a>
@@ -125,19 +125,19 @@
       </div>
 
       <!-- div playa -->
-      <!-- ver responsive -->
-      <div class="container-fluid">
+      <div class="container-fluid p-0">
         <a name="LugarFecha"></a>
             <div class="row">
-              <div class="col-md-6 col-lg-6 col-xl-6 p-0 border-white border-end"><img src="img/honolulu.jpg" class="d-block" alt="Playa Honolulu" width="100%"></div>
-              <div class="col-md-6 col-lg-6 col-xl-6 fondo-gris-oscuro text-light p-3"><h5>Bs As - Octubre</h5><p class="texto-bsas">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las prncipales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la irla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidadda que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p> 
-                <button class="btn btn-outline-light me-md-2 texto-bsas" type="button">Conocé más</button>
+              <div class="col-12 col-sm-6 p-0 border-white border-end"><img src="img/honolulu.jpg" class="d-block mx-auto" alt="Playa Honolulu" width="100%"></div>
+              <div class="col-12 col-sm-6 fondo-gris-oscuro text-light p-3"><h5 class="titulo-bsas">Bs As - Octubre</h5><p class="texto-bsas">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la irla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p> 
+                <button class="btn btn-outline-light btn-bsas btn-sm" type="button">Conocé más</button>
               </div>
             </div>
       </div>
 
       <a name="ConvierteteOrador"></a>
       <!-- formulario -->
+      <!-- centrar más -->
       <div class="container p-5 my-5">
         <!-- ver tamaños titulos -->
         <h2 class="text-center fs-6">CONVIÉRTETE EN UN</h2>
@@ -171,16 +171,15 @@
   <!-- ver footer responsive -->
   <footer>
     <div class="container-fluid mi-footer">
-      <div class="footer-menu p-3">
-          <a class="p-3" href="">Preguntas Frecuentes</a>
-          <a class="p-3" href="">Contáctanos</a>
-          <a class="p-3" href="">Prensa</a>
-          <a class="p-3" href="">Conferencias</a>
-          <a class="p-3" href="">Términos y Condiciones</a>
-          <a class="p-3" href="">Privacidad</a>
-          <a class="p-3" href="">Estudiantes</a>
+      <div class="row footer-menu p-3">
+          <a class="col" href="">Preguntas Frecuentes</a>
+          <a class="col" href="">Contáctanos</a>
+          <a class="col" href="">Prensa</a>
+          <a class="col" href="">Conferencias</a>
+          <a class="col" href="">Términos y Condiciones</a>
+          <a class="col" href="">Privacidad</a>
+          <a class="col" href="">Estudiantes</a>
       </div>
     </div>
   </footer>
- 
 </html>
