@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .fondo-verde-boton{
   background-color: rgb(41,167,68);
 }
@@ -8,17 +12,14 @@
 
 .relativo {
     position:relative;
+    display: flex;
+    flex:start;
 }
 
-.display-flex{
-  /*width: 100vw;
-  height: 100vh;*/
-  display: flex;
-  flex: start;
-}
 #opacidad-fondo{
   filter:brightness(50%);
 }
+
 .centrar {
     position:absolute;
     top:55%;
@@ -44,7 +45,7 @@
 
 @media (max-width:540px) {
   .centrar {
-    top:35%;
+    top:40%;
     right:10%;
     position:absolute;
     font-size: x-small;
@@ -52,7 +53,7 @@
 }
   @media (max-width:425px) {
     .centrar {
-      top:15%;
+      top:25%;
       right:10%;
       position:absolute;
       font-size: xx-small;
@@ -98,6 +99,19 @@
   }
  
 }
+@media (max-width:575px) {
+  .texto-bsas, .btn-bsas {
+    font-size: small;
+    margin-bottom: 5px;
+    margin-inline: 10px;
+  }
+  .titulo-bsas{
+    font-size: large;
+    margin-inline: 10px;
+  }
+ 
+}
+
 
 .texto-punteado{
   text-decoration:underline;
@@ -123,14 +137,12 @@ label{
   }
 
 .footer-menu{
-  padding-right: 10px;
   display: block;
   }
 
 .footer-menu a{
   color: #eef1f4;
   text-decoration: none;
-  padding: 5px;
 }
 
 .footer-menu a:hover{
