@@ -79,37 +79,71 @@ body {
 
 .texto-bsas {
   font-size: smaller;
-  padding-right: 10px;
 }
 
 
-@media (max-width:802px) {
+@media (max-width:830px) {
+  .texto-bsas {
+    font-size: small;
+  }
+}
+
+@media (max-width:810px) {
   .texto-bsas {
     font-size: x-small;
+    margin-bottom: 0.4rem;
+  }
+  .titulo-bsas{
+    font-size:medium;
+    margin-bottom: 0.4rem;
+  }
+  .btn-bsas {
+    font-size: xx-small;
+    margin-bottom: 0.2rem;
   }
 }
 
-@media (max-width:655px) {
+@media (max-width:644px) {
   .texto-bsas, .btn-bsas {
     font-size: xx-small;
-    margin-bottom: 5px;
+    margin-bottom: 0.1rem;
+
   }
   .titulo-bsas{
-    font-size: large;
+    font-size:small;
+    margin-bottom: 0.2rem;
+    
   }
- 
+
+  @media (max-width:644px) {
+    .cambiar-p {
+      padding:0rem;
+    }
+    .btn-sm{
+      padding: 0.2rem;
+      font-size: .675rem;
+      border-radius: 0.2rem;
+  }
+  .btn-bsas {
+    font-size: xx-small;
+    margin-top: 0.1rem;
 }
+
 @media (max-width:575px) {
   .texto-bsas, .btn-bsas {
     font-size: small;
-    margin-bottom: 5px;
-    margin-inline: 10px;
+    margin-bottom: 0.4rem;
+    margin-inline: 1rem;
+    
   }
   .titulo-bsas{
     font-size: large;
-    margin-inline: 10px;
+    margin-inline: 1rem;
   }
+  .btn-sm{
+    padding: 0.1rem;
  
+  }
 }
 
 
