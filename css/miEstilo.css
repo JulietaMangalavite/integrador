@@ -183,3 +183,24 @@ label{
 form{
   padding-inline: 10%;
 }
+
+#borde-azul{
+  border-style: solid;
+  border-color: rgba(13,129,253,255);
+}
+
+#borde-verde{
+  border-style: solid;
+  border-color: rgba(35,166,186,255);
+}
+
+#borde-amarillo{
+  border-style: solid;
+  border-color: rgba(255,221,118,255);
+}
+
+.div-total{
+  background-color: rgba(204,229,255,255);
+  color: rgba(35,92,153,255);
+  border-radius: 0.5em;
+}
