@@ -1,4 +1,3 @@
-
 const btnResumen = document.getElementById("btn-resumen");
 const btnResetear = document.getElementById("btnResetear");
 
@@ -39,10 +38,15 @@ function total() {
 }
 
 
-/*function reset() {
-    const resetCant = document.getElementById("cantidad");
-    return resetCant.innerHTML = "0"; 
+function reset() {
+   resetPagar()
 }
 
-btnResetear.onclick = reset; */
+function resetPagar() {
+    const elTotal = document.getElementById("resultado");
+    elTotal.innerHTML = "Total a pagar: $";
+} 
+
+btnResetear.onclick = reset
+
 btnResumen.onclick = total;
